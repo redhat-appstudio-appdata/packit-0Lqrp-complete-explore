@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: packit
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/ttomecek-tenant/packit/packit@sha256:b589f1a8680593b215bf14b584b18dce0fa186cb1aaef388f85a90428505aeb3
+        name: container-image
+        resources: {}
+status: {}
